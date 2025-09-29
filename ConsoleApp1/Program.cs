@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text.Json; // lai JSON strādātu
 // using System.Text.Json.Serialization; // varbūt vajag vēlāk
 
-namespace FinanceAppMessy
+namespace Finance
 {
     enum Cat { Food, Transport, Fun, School, Other } // viss šeit
 
@@ -80,7 +80,7 @@ namespace FinanceAppMessy
             while (run)
             {
                 Console.Clear();
-                Console.WriteLine("=== FINANŠU LIETOTNE (student versija) ===");
+                Console.WriteLine("=== FINANŠU LIETOTNE===");
                 Console.WriteLine("1) Ienākumi");
                 Console.WriteLine("2) Izdevumi");
                 Console.WriteLine("3) Abonementi");
