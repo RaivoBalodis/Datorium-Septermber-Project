@@ -7,7 +7,7 @@ using System.Text.Json; // lai JSON strādātu
 namespace Finance
 {
     enum Cat { Food, Transport, Fun, School, Other } // viss šeit
-
+// klases, ienakumi ect.
     class Income
     {
         public DateTime Date { get; set; }
@@ -30,12 +30,12 @@ namespace Finance
         public DateTime StartDate { get; set; }
         public bool IsActive { get; set; }
     }
-
+    //parbauda vai lietotajs ievadija pareizu info, nav negativs text vai tukss.
     class ValidationException : Exception
     {
         public ValidationException(string msg) : base(msg) { }
     }
-
+    //sature metodes kas var noderet vairakas reizes, lai nav copy paste.
     static class Tools
     {
         public static decimal SafeParseDecimal(string msg)
@@ -67,7 +67,7 @@ namespace Finance
             return Math.Round((part / total) * 100, 1);
         }
     }
-
+    // galvena klase jeb tas kas glaba visu utt. idk kaut kas.
     class Program
     {
         static List<Income> inc = new List<Income>();
@@ -241,7 +241,7 @@ namespace Finance
                 Console.WriteLine($"{s.Name} {s.MonthlyPrice}€ {(s.IsActive ? "ok" : "x")}");
             Console.ReadKey();
         }
-
+        //sitas pigors lauj tev atlasit lietas - piem tikai ediens
         static void Filters()
         {
             Console.Clear();
@@ -345,3 +345,5 @@ namespace Finance
         }
     }
 }
+
+
