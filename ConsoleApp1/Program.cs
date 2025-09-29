@@ -5,6 +5,18 @@ using System.Linq;
 namespace PersonalFinancePlanner
 {
 
+    public enum Category
+    {
+        Food,Transport,Entertainment,School,Other //Todo maybe Pievienot velak
+    }
+
+    public class Income
+    {
+        public DateTime date { get; set; }
+        public string source { get; set; }
+        public decimal amount { get; set; }
+        
+    }
 
     class Program
     {
