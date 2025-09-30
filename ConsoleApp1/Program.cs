@@ -6,7 +6,7 @@ using System.Text.Json; // lai JSON strādātu
 
 namespace Finance
 {
-    enum Cat { Food, Transport, Fun, School, Other } // viss šeit
+    enum Cat { Food, Transport, Fun, School, Other } // kategorijas prieks izdevumiem.
 // klases, ienakumi ect.
     class Income
     {
@@ -271,7 +271,7 @@ namespace Finance
             Console.WriteLine($"Kopā: {total}€");
             Console.ReadKey();
         }
-
+// menesa pigors, cik daudz naudas ienaca un cik iztērēja.
         static void MonthReport()
         {
             Console.Clear();
