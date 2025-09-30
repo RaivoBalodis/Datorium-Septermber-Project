@@ -417,5 +417,4 @@ namespace Finance
             public List<Expense> Expenses { get; set; }
             public List<Subscription> Subs { get; set; }
         }
-    }
-}
+    } } //oo jaa
